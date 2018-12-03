@@ -6,7 +6,6 @@
 
 html {
   box-sizing: border-box;
-  font: normal 100%/1.3 Georgia, serif;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -19,4 +18,37 @@ html {
 
 body {
   margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #fff;
+  margin: 0;
+}
+
+header {
+  background-color: #EE79FF;
+  margin: 0;
+}
+
+.link {
+  max-width: 10%;
+
+}
+
+.header-link {
+  color: #fff;
+}
+
+.header-link:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #6c8fe0;
 }
