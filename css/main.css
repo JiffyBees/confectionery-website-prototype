@@ -26,29 +26,157 @@ li {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
-h1 {
+header h1 {
+  text-align: left;
   color: #fff;
   margin: 0;
-}
-
-header {
-  background-color: #EE79FF;
-  margin: 0;
+  padding: .5rem;
 }
 
 .link {
-  max-width: 10%;
+  max-width: 40px;
+}
 
+header {
+  background-color: #9A6A3E;
 }
 
 .header-link {
-  color: #fff;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
-.header-link:hover {
+h1 {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+.header-link li {
+  display: inline-block;
+  align-items: center;
+  list-style-type: none;
+  font-size: 1.125rem;
+  width: 32%;
+}
+
+.header-link a {
+  display: inline-block;
+  width: 100%;
   text-decoration: none;
   color: #fff;
-  background-color: #6c8fe0;
+  background-color: #9A6A3E;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #3E2916;
+}
+
+.border {
+  align-items: center;
+  text-align: center;
+  border-color: #3E2916;
+  border-top: 1px solid #3E2916;
+}
+
+.border-1 {
+  padding: .5em 0;
+  border-color: #3E2916;
+}
+
+.border-2 {
+  padding: .5em 0;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-color: #3E2916;
+}
+
+.border-3 {
+  padding: .5em 0;
+  border-color: #3E2916;
+}
+
+.coco {
+  display: flex;
+  border-bottom: 1px solid;
+  border-color: #3E2916;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5em 2rem;
+  padding-left: 0;
+}
+
+.border-3:hover {
+  text-decoration: none;
+  background-color: #9C7551;
+}
+
+.border-2:hover {
+  text-decoration: none;
+  background-color: #9C7551;
+}
+
+.border-1:hover {
+  text-decoration: none;
+  background-color: #9C7551;
+}
+
+.person-circle {
+  position: absolute;
+  max-width: 50%;
+  width: 35%;
+  right: 13px;
+  top: 8rem;
+}
+
+.circle-text {
+  position: absolute;
+  max-width: 50%;
+  width: 35%;
+  right: 13px;
+  top: 18rem;
+}
+
+.location-box {
+  max-width: 49%;
+  padding-left: 1rem;
+}
+
+.reward {
+  text-align: center;
+  background-color: #FFA95A;
+}
+
+h3 {
+  color: #fff;
+  text-align: center;
+}
+
+.footer-b {
+  background-color: #000;
+  text-align: center;
+  padding: .5em;
+}
+
+.footer-tag {
+  background-color: #000;
+  text-align: center;
+  border-radius: 2px;
+  padding: 1.5em;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: .5rem;
+  padding-bottom: 2rem;
 }
