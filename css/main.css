@@ -5,6 +5,7 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
+  font-family: Noto Sans, sans-serif;
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -41,7 +42,15 @@ header h1 {
 }
 
 header {
-  background-color: #9A6A3E;
+  background-color: #9a6a3e;
+}
+
+.header-img {
+width: 100%;
+}
+
+.img-large {
+  display: none;
 }
 
 .header-link {
@@ -53,7 +62,6 @@ header {
 h1 {
   display: inline-block;
   font-size: 2rem;
-  font-weight: bold;
   text-align: center;
   color: #fff;
   margin: 0;
@@ -64,6 +72,7 @@ h1 {
   align-items: center;
   list-style-type: none;
   font-size: 1.125rem;
+  font-weight: bold;
   width: 32%;
 }
 
@@ -72,62 +81,69 @@ h1 {
   width: 100%;
   text-decoration: none;
   color: #fff;
-  background-color: #9A6A3E;
+  background-color: #9a6a3e;
 }
 
 a:hover {
   text-decoration: none;
   color: #fff;
-  background-color: #3E2916;
+  background-color: #3e2916;
 }
 
 .border {
   align-items: center;
   text-align: center;
-  border-color: #3E2916;
-  border-top: 1px solid #3E2916;
+  border-color: #3e2916;
+  border-top: 1px solid #3e2916;
 }
 
 .border-1 {
   padding: .5em 0;
-  border-color: #3E2916;
+  border-color: #3e2916;
 }
 
 .border-2 {
   padding: .5em 0;
   border-right: 1px solid;
   border-left: 1px solid;
-  border-color: #3E2916;
+  border-color: #3e2916;
 }
 
 .border-3 {
   padding: .5em 0;
-  border-color: #3E2916;
+  border-color: #3e2916;
 }
 
 .coco {
   display: flex;
   border-bottom: 1px solid;
-  border-color: #3E2916;
+  border-color: #3e2916;
   align-items: center;
   justify-content: space-between;
   padding: .5em 2rem;
   padding-left: 0;
 }
 
+.info-box {
+  border: 2px solid;
+  border-color: #3e2916;
+  border-radius: 4px;
+  padding: .5em 2rem;
+}
+
 .border-3:hover {
   text-decoration: none;
-  background-color: #9C7551;
+  background-color: #9c7551;
 }
 
 .border-2:hover {
   text-decoration: none;
-  background-color: #9C7551;
+  background-color: #9c7551;
 }
 
 .border-1:hover {
   text-decoration: none;
-  background-color: #9C7551;
+  background-color: #9c7551;
 }
 
 .person-circle {
@@ -139,6 +155,7 @@ a:hover {
 }
 
 .circle-text {
+  background-color: rgba(0, 0, 0, .3);
   position: absolute;
   max-width: 50%;
   width: 35%;
@@ -153,7 +170,7 @@ a:hover {
 
 .reward {
   text-align: center;
-  background-color: #FFA95A;
+  background-color: #ffa95a;
 }
 
 h3 {
@@ -179,4 +196,14 @@ footer {
   text-align: center;
   padding: .5rem;
   padding-bottom: 2rem;
+}
+
+ ul {
+  padding: 0;
+}
+
+
+
+@media only screen and (min-width: 25em) {
+
 }
