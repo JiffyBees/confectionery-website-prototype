@@ -5,7 +5,7 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-  font-family: Noto Sans, sans-serif;
+  font-family: "Noto Sans", sans-serif;
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -46,7 +46,7 @@ header {
 }
 
 .header-img {
-width: 100%;
+  width: 100%;
 }
 
 .img-large {
@@ -159,6 +159,7 @@ a:hover {
   position: absolute;
   max-width: 50%;
   width: 35%;
+  text-align: right;
   right: 13px;
   top: 18rem;
 }
@@ -198,12 +199,115 @@ footer {
   padding-bottom: 2rem;
 }
 
- ul {
+ul {
   padding: 0;
 }
 
+.img-flex {
+  display: block;
+  width: 100%;
+}
 
+.candy-text {
+  text-align: center;
+}
+
+.candy {
+  margin: 5rem;
+  background-color: #a6fcf1;
+  box-shadow: 10px 10px 5px lightgrey;
+  padding: .5rem;
+  min-width: 1rem;
+}
+
+.candy-img {
+  width: 100%;
+}
+
+.candy:first-child {
+  background-color: #fca6a6;
+  margin-top: 0;
+}
+
+.candy:nth-child(2) {
+  background-color: #fccea6;
+}
+
+.candy:nth-child(3) {
+  background-color: #fbfca6;
+}
+
+.candy:nth-child(4) {
+  background-color: #cdfca6;
+}
+
+.candy:nth-child(6) {
+  background-color: #c9a6fc;
+}
+
+.location-head {
+  border-top: 5px solid;
+  padding-top: 1rem;
+  margin-top: 0;
+}
+
+.pad-location {
+  padding-left: 1rem;
+}
 
 @media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 100%;
+    line-height: 1.3;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.3rem;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.4rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+   font-size: 120%;
+   line-height: 1.5;
+  }
+
+   h1,
+   p {
+     margin: 0 0 1.5rem;
+  }
+
+  .wrap {
+    display: inline-block;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-left: 5rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
 
 }
