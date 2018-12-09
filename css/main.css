@@ -87,7 +87,6 @@ h1 {
 a:hover {
   text-decoration: none;
   color: #fff;
-  background-color: #3e2916;
 }
 
 .border {
@@ -126,9 +125,17 @@ a:hover {
 
 .info-box {
   border: 2px solid;
-  border-color: #3e2916;
+  background-color: #666;
+  border-color: #999;
   border-radius: 4px;
-  padding: .5em 2rem;
+  padding: 2em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-right: 1rem;
+}
+
+.info-box:hover {
+  background-color: #333;
 }
 
 .border-3:hover {
@@ -154,16 +161,6 @@ a:hover {
   top: 8rem;
 }
 
-.circle-text {
-  background-color: rgba(0, 0, 0, .3);
-  position: absolute;
-  max-width: 50%;
-  width: 35%;
-  text-align: right;
-  right: 13px;
-  top: 18rem;
-}
-
 .location-box {
   max-width: 49%;
   padding-left: 1rem;
@@ -182,7 +179,8 @@ h3 {
 .footer-b {
   background-color: #000;
   text-align: center;
-  padding: .5em;
+  padding: .2em;
+  margin: .5rem;
 }
 
 .footer-tag {
@@ -210,6 +208,7 @@ ul {
 
 .candy-text {
   text-align: center;
+  margin-top: 0;
 }
 
 .candy {
@@ -276,7 +275,6 @@ ul {
 
 .light {
   background-color: #e2e2e2;
-  padding-bottom: 2rem;
   padding: 2rem;
 }
 
@@ -291,6 +289,46 @@ ul {
   padding: 2rem;
 }
 
+h2 {
+  margin-bottom: 0;
+}
+
+  .small-text {
+    font-size: 75%;
+  }
+
+  .button-m {
+    border: 3px solid #ccc;
+    background-color: #333;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: .3em 1em .3em;
+    font-size: .875rem;
+  }
+
+  .button-m:hover {
+    border-color: #fe1616;
+    background-color: #fb3a3a;
+  }
+
+  .no-margin {
+    margin: 0;
+  }
+
+  .circle-text {
+    padding-left: 1rem;
+  }
+
+  .circle-text {
+    background-color: rgba(0, 0, 0, .3);
+    position: fixed;
+    max-width: 50%;
+    width: 50%;
+    text-align: right;
+    right: 13px;
+    top: 35rem;
+  }
+
 @media only screen and (min-width: 25em) {
 
   html {
@@ -302,8 +340,6 @@ ul {
   p {
     margin: 0 0 1.3rem;
   }
-
-
 
 }
 
@@ -317,6 +353,24 @@ ul {
   h1,
   p {
     margin: 0 0 1.4rem;
+  }
+
+  .circle-text {
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    position: fixed;
+    max-width: 50%;
+    width: 35%;
+    text-align: right;
+    padding-right: 1rem;
+    right: 13px;
+    top: 25rem;
+  }
+
+  .person-circle {
+    position: relative;
+    top: 0rem;
+    left: 33.33%;
   }
 
 }
@@ -381,8 +435,8 @@ ul {
     margin: 0
   }
 
-  .small-text {
-    font-size: 50%;
+  .candy-text > h2 {
+    margin-top: 0;
   }
 
   .candies {
@@ -391,6 +445,10 @@ ul {
 
   .main-events {
     display: flex;
+  }
+
+  .img-large {
+    display: block;
   }
 
 }
